@@ -9,9 +9,58 @@
   </head>
 
   <body>
-    <div class="container">
-      <header></header>
-    </div>
+    <header class="header">
+      <img src="./assets/todo-svg.svg" alt="todo" />
+      <h1>Taskify</h1>
+
+      <div class="groups">
+        <div class="groups--card">
+          <h3>Groups</h3>
+          <button class="groups--card__btn" aria-label="Add new group">
+            +
+          </button>
+        </div>
+        <ul class="groups--card__lists">
+          <li class="groups--card--list">Projects</li>
+          <li class="groups--card--list">Running</li>
+          <li class="groups--card--list">Reading</li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="header--secondary">
+        <div class="header--tasks">
+          <h2 class="header__secondary--title">Tasks</h2>
+          <p id="header--secondary__date">03 October, 2025</p>
+
+          <div class="header__container--info">
+            <div class="header__container--search">
+              <input type="text" placeholder="Search tasks..." />
+            </div>
+
+            <button class="header__container--btn" aria-label="Add new task">
+              <img src="./assets/add-svg.svg" alt="add" />
+              <span class="header__container--btn__add">Add task</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="tasks">
+          <p class="filters">
+            <span class="filter">All</span>
+            <span class="filter">Active</span>
+            <span class="filter">Completed</span>
+          </p>
+
+          <div class="tasks__container">
+            <ul class="tasks__container--list">
+              <!-- todo list will be here -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="./src/js/script.js"></script>
   </body>
